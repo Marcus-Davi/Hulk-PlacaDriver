@@ -1,4 +1,242 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_UART:MAX232 U1
+U 1 1 5E4556C3
+P 4200 2800
+F 0 "U1" H 4200 4181 50  0000 C CNN
+F 1 "MAX232" H 4200 4090 50  0000 C CNN
+F 2 "" H 4250 1750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 4200 2900 50  0001 C CNN
+	1    4200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C1
+U 1 1 5E456B3B
+P 5750 2350
+F 0 "C1" H 5928 2396 50  0000 L CNN
+F 1 "CAP" H 5928 2305 50  0000 L CNN
+F 2 "" H 5750 2350 50  0001 C CNN
+F 3 "~" H 5750 2350 50  0001 C CNN
+	1    5750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB25_Female J?
+U 1 1 5E4574EF
+P 7800 3000
+F 0 "J?" H 7980 3046 50  0000 L CNN
+F 1 "DB25_Female" H 7980 2955 50  0000 L CNN
+F 2 "" H 7800 3000 50  0001 C CNN
+F 3 " ~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E474845
+P 6800 2700
+F 0 "#PWR?" H 6800 2450 50  0001 C CNN
+F 1 "GND" H 6805 2527 50  0000 C CNN
+F 2 "" H 6800 2700 50  0001 C CNN
+F 3 "" H 6800 2700 50  0001 C CNN
+	1    6800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2700 7300 2700
+Wire Wire Line
+	7300 2700 7300 2600
+Wire Wire Line
+	7300 2600 7500 2600
+Wire Wire Line
+	7500 1900 5500 1900
+Wire Wire Line
+	5500 1900 5500 1600
+Wire Wire Line
+	5500 1600 4200 1600
+Wire Wire Line
+	4250 4000 4200 4000
+$Comp
+L pspice:CAP C?
+U 1 1 5E487C7B
+P 2650 2000
+F 0 "C?" H 2828 2046 50  0000 L CNN
+F 1 "CAP" H 2828 1955 50  0000 L CNN
+F 2 "" H 2650 2000 50  0001 C CNN
+F 3 "~" H 2650 2000 50  0001 C CNN
+	1    2650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1750 3400 1750
+Wire Wire Line
+	3400 1750 3400 1900
+Wire Wire Line
+	2650 2250 3400 2250
+Wire Wire Line
+	3400 2250 3400 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5E46B6EB
+P 4200 4200
+F 0 "#PWR?" H 4200 3950 50  0001 C CNN
+F 1 "GND" H 4205 4027 50  0000 C CNN
+F 2 "" H 4200 4200 50  0001 C CNN
+F 3 "" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4000 4200 4200
+Connection ~ 4200 4000
+Wire Wire Line
+	6500 2000 7500 2000
+Wire Wire Line
+	6450 2200 7500 2200
+Wire Wire Line
+	6500 3300 6500 2000
+Wire Wire Line
+	5000 3300 6500 3300
+Wire Wire Line
+	6450 2900 6450 2200
+Wire Wire Line
+	5000 2900 6450 2900
+$Comp
+L pspice:CAP C?
+U 1 1 5E4A2D2D
+P 6150 2350
+F 0 "C?" H 6328 2396 50  0000 L CNN
+F 1 "CAP" H 6328 2305 50  0000 L CNN
+F 2 "" H 6150 2350 50  0001 C CNN
+F 3 "~" H 6150 2350 50  0001 C CNN
+	1    6150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E4A9677
+P 5400 2350
+F 0 "C?" H 5578 2396 50  0000 L CNN
+F 1 "CAP" H 5578 2305 50  0000 L CNN
+F 2 "" H 5400 2350 50  0001 C CNN
+F 3 "~" H 5400 2350 50  0001 C CNN
+	1    5400 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2100 5200 2100
+Wire Wire Line
+	5200 2100 5200 2700
+Wire Wire Line
+	5200 2700 5000 2700
+Wire Wire Line
+	5000 2400 5150 2400
+Wire Wire Line
+	5150 2400 5150 2050
+Wire Wire Line
+	5150 2050 5750 2050
+Wire Wire Line
+	5750 2050 5750 2100
+Wire Wire Line
+	5000 2200 5000 2000
+Wire Wire Line
+	5000 2000 5950 2000
+Wire Wire Line
+	5950 2000 5950 2600
+Wire Wire Line
+	5950 2600 6150 2600
+Wire Wire Line
+	5000 1900 5300 1900
+Wire Wire Line
+	5300 1900 5300 1950
+Wire Wire Line
+	5300 1950 6150 1950
+Wire Wire Line
+	6150 1950 6150 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5E4ADDCB
+P 5400 2600
+F 0 "#PWR?" H 5400 2350 50  0001 C CNN
+F 1 "GND" H 5405 2427 50  0000 C CNN
+F 2 "" H 5400 2600 50  0001 C CNN
+F 3 "" H 5400 2600 50  0001 C CNN
+	1    5400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E4AFAB5
+P 5850 2700
+F 0 "#PWR?" H 5850 2550 50  0001 C CNN
+F 1 "+5V" H 5865 2873 50  0000 C CNN
+F 2 "" H 5850 2700 50  0001 C CNN
+F 3 "" H 5850 2700 50  0001 C CNN
+	1    5850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2600 5750 2750
+Wire Wire Line
+	5750 2750 5850 2750
+Wire Wire Line
+	5850 2750 5850 2700
+$Comp
+L power:+5V #PWR?
+U 1 1 5E4B0D24
+P 5500 1450
+F 0 "#PWR?" H 5500 1300 50  0001 C CNN
+F 1 "+5V" H 5515 1623 50  0000 C CNN
+F 2 "" H 5500 1450 50  0001 C CNN
+F 3 "" H 5500 1450 50  0001 C CNN
+	1    5500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1450 5500 1600
+Connection ~ 5500 1600
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5E4BCB35
+P 2450 3150
+F 0 "J?" H 2530 3192 50  0000 L CNN
+F 1 "Conn_01x03" H 2530 3101 50  0000 L CNN
+F 2 "" H 2450 3150 50  0001 C CNN
+F 3 "~" H 2450 3150 50  0001 C CNN
+	1    2450 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 3250 3050 3250
+Wire Wire Line
+	3050 3250 3050 4000
+Wire Wire Line
+	3050 4000 4200 4000
+Wire Wire Line
+	2650 3150 3250 3150
+Wire Wire Line
+	3250 3150 3250 3300
+Wire Wire Line
+	3250 3300 3400 3300
+Wire Wire Line
+	2650 3050 3000 3050
+Wire Wire Line
+	3000 3050 3000 2900
+Wire Wire Line
+	3000 2900 3400 2900
 $EndSCHEMATC
