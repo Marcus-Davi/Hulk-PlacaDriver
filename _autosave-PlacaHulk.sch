@@ -58,11 +58,7 @@ F 3 "" H 6800 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 2700 7300 2700
-Wire Wire Line
-	7300 2700 7300 2600
-Wire Wire Line
-	7300 2600 7500 2600
+	6800 2700 7000 2700
 Wire Wire Line
 	7500 1900 5500 1900
 Wire Wire Line
@@ -223,10 +219,10 @@ Wire Wire Line
 Wire Wire Line
 	3000 2900 3400 2900
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J1
 U 1 1 5E46CB90
 P 2200 3050
-F 0 "J?" H 2118 3367 50  0000 C CNN
+F 0 "J1" H 2118 3367 50  0000 C CNN
 F 1 "Conn_01x04" H 2118 3276 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2200 3050 50  0001 C CNN
 F 3 "~" H 2200 3050 50  0001 C CNN
@@ -248,4 +244,23 @@ Wire Wire Line
 Wire Wire Line
 	2500 1600 4200 1600
 Connection ~ 4200 1600
+$Comp
+L power:+5C #PWR0101
+U 1 1 5E488E1B
+P 7250 3650
+F 0 "#PWR0101" H 7250 3500 50  0001 C CNN
+F 1 "+5C" H 7265 3823 50  0000 C CNN
+F 2 "" H 7250 3650 50  0001 C CNN
+F 3 "" H 7250 3650 50  0001 C CNN
+	1    7250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4200 7000 4200
+Wire Wire Line
+	7500 4100 7250 4100
+Wire Wire Line
+	7250 4100 7250 3650
+Wire Wire Line
+	7000 2700 7000 4200
 $EndSCHEMATC

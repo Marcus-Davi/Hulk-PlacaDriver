@@ -58,7 +58,7 @@ F 3 "" H 6800 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 2700 7300 2700
+	6800 2700 7000 2700
 Wire Wire Line
 	7300 2700 7300 2600
 Wire Wire Line
@@ -210,33 +210,69 @@ $EndComp
 Wire Wire Line
 	5500 1450 5500 1600
 Connection ~ 5500 1600
-$Comp
-L Connector_Generic:Conn_01x03 J1
-U 1 1 5E4BCB35
-P 2450 3150
-F 0 "J1" H 2530 3192 50  0000 L CNN
-F 1 "Conn_01x03" H 2530 3101 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2450 3150 50  0001 C CNN
-F 3 "~" H 2450 3150 50  0001 C CNN
-	1    2450 3150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2650 3250 3050 3250
 Wire Wire Line
 	3050 3250 3050 4000
 Wire Wire Line
 	3050 4000 4200 4000
 Wire Wire Line
-	2650 3150 3250 3150
-Wire Wire Line
 	3250 3150 3250 3300
 Wire Wire Line
 	3250 3300 3400 3300
 Wire Wire Line
-	2650 3050 3000 3050
-Wire Wire Line
 	3000 3050 3000 2900
 Wire Wire Line
 	3000 2900 3400 2900
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5E46CB90
+P 2200 3050
+F 0 "J1" H 2118 3367 50  0000 C CNN
+F 1 "Conn_01x04" H 2118 3276 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2200 3050 50  0001 C CNN
+F 3 "~" H 2200 3050 50  0001 C CNN
+	1    2200 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3250 3050 3250
+Wire Wire Line
+	2400 3150 3250 3150
+Wire Wire Line
+	2400 3050 3000 3050
+Wire Wire Line
+	2400 2950 2400 1650
+Wire Wire Line
+	2400 1650 2500 1650
+Wire Wire Line
+	2500 1650 2500 1600
+Wire Wire Line
+	2500 1600 4200 1600
+Connection ~ 4200 1600
+Wire Wire Line
+	7000 4200 7000 3400
+Connection ~ 7000 2700
+Wire Wire Line
+	7000 2700 7300 2700
+Wire Wire Line
+	7500 3400 7000 3400
+Connection ~ 7000 3400
+Wire Wire Line
+	7000 3400 7000 2700
+$Comp
+L power:+5C #PWR?
+U 1 1 5E488E1B
+P 7250 3650
+F 0 "#PWR?" H 7250 3500 50  0001 C CNN
+F 1 "+5C" H 7265 3823 50  0000 C CNN
+F 2 "" H 7250 3650 50  0001 C CNN
+F 3 "" H 7250 3650 50  0001 C CNN
+	1    7250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4200 7000 4200
+Wire Wire Line
+	7500 4100 7250 4100
+Wire Wire Line
+	7250 4100 7250 3650
 $EndSCHEMATC
