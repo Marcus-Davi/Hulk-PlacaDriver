@@ -306,4 +306,39 @@ Wire Wire Line
 	5000 3100 6450 3100
 Wire Wire Line
 	6450 2200 6450 3100
+Wire Wire Line
+	7500 3700 7350 3700
+Wire Wire Line
+	7350 3700 7350 3750
+Wire Wire Line
+	7350 3750 6050 3750
+Wire Wire Line
+	6050 3850 7350 3850
+Wire Wire Line
+	7350 3850 7350 3800
+Wire Wire Line
+	7350 3800 7500 3800
+Wire Wire Line
+	6050 4050 7350 4050
+Wire Wire Line
+	7350 4050 7350 4000
+Wire Wire Line
+	7350 4000 7500 4000
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5E4F10B5
+P 5850 3850
+F 0 "J?" H 5768 4167 50  0000 C CNN
+F 1 "Conn_01x04" H 5768 4076 50  0000 C CNN
+F 2 "" H 5850 3850 50  0001 C CNN
+F 3 "~" H 5850 3850 50  0001 C CNN
+	1    5850 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3950 7350 3950
+Wire Wire Line
+	7350 3950 7350 3900
+Wire Wire Line
+	7350 3900 7500 3900
 $EndSCHEMATC

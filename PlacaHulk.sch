@@ -36,17 +36,6 @@ F 3 "~" H 5750 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:DB25_Female J2
-U 1 1 5E4574EF
-P 7800 3000
-F 0 "J2" H 7980 3046 50  0000 L CNN
-F 1 "DB25_Female" H 7980 2955 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-25_Female_Vertical_P2.77x2.84mm" H 7800 3000 50  0001 C CNN
-F 3 " ~" H 7800 3000 50  0001 C CNN
-	1    7800 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 5E474845
 P 6800 2700
@@ -234,17 +223,6 @@ Wire Wire Line
 Connection ~ 7000 3400
 Wire Wire Line
 	7000 3400 7000 2700
-$Comp
-L power:+5C #PWR0101
-U 1 1 5E488E1B
-P 7250 3650
-F 0 "#PWR0101" H 7250 3500 50  0001 C CNN
-F 1 "+5C" H 7265 3823 50  0000 C CNN
-F 2 "" H 7250 3650 50  0001 C CNN
-F 3 "" H 7250 3650 50  0001 C CNN
-	1    7250 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7500 4200 7000 4200
 Wire Wire Line
@@ -306,39 +284,63 @@ Wire Wire Line
 	5000 3100 6450 3100
 Wire Wire Line
 	6450 2200 6450 3100
-Wire Wire Line
-	7500 3700 7350 3700
-Wire Wire Line
-	7350 3700 7350 3750
-Wire Wire Line
-	7350 3750 6050 3750
-Wire Wire Line
-	6050 3850 7350 3850
-Wire Wire Line
-	7350 3850 7350 3800
-Wire Wire Line
-	7350 3800 7500 3800
-Wire Wire Line
-	6050 4050 7350 4050
-Wire Wire Line
-	7350 4050 7350 4000
-Wire Wire Line
-	7350 4000 7500 4000
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J3
 U 1 1 5E4F10B5
 P 5850 3850
-F 0 "J?" H 5768 4167 50  0000 C CNN
+F 0 "J3" H 5768 4167 50  0000 C CNN
 F 1 "Conn_01x04" H 5768 4076 50  0000 C CNN
-F 2 "" H 5850 3850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5850 3850 50  0001 C CNN
 F 3 "~" H 5850 3850 50  0001 C CNN
 	1    5850 3850
 	-1   0    0    -1  
 $EndComp
+$Comp
+L power:+5C #PWR0101
+U 1 1 5E488E1B
+P 7250 3650
+F 0 "#PWR0101" H 7250 3500 50  0001 C CNN
+F 1 "+5C" H 7265 3823 50  0000 C CNN
+F 2 "" H 7250 3650 50  0001 C CNN
+F 3 "" H 7250 3650 50  0001 C CNN
+	1    7250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:DB25_Female J2
+U 1 1 5E4574EF
+P 7800 3000
+F 0 "J2" H 7980 3046 50  0000 L CNN
+F 1 "DB25_Female" H 7980 2955 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-25_Female_Vertical_P2.77x2.84mm" H 7800 3000 50  0001 C CNN
+F 3 " ~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6050 3950 7350 3950
+	7500 3700 7400 3700
 Wire Wire Line
-	7350 3950 7350 3900
+	7400 3700 7400 3600
 Wire Wire Line
-	7350 3900 7500 3900
+	7400 3600 6200 3600
+Wire Wire Line
+	6200 3600 6200 3750
+Wire Wire Line
+	6200 3750 6050 3750
+Wire Wire Line
+	7500 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 3850
+Wire Wire Line
+	6450 3850 6050 3850
+Wire Wire Line
+	7500 3800 6850 3800
+Wire Wire Line
+	6850 3800 6850 4050
+Wire Wire Line
+	6850 4050 6050 4050
+Wire Wire Line
+	6050 3950 7500 3950
+Wire Wire Line
+	7500 3950 7500 4000
 $EndSCHEMATC
